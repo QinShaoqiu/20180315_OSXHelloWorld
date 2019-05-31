@@ -11,10 +11,12 @@
 @implementation TestModel
 
 - (instancetype)initWithTitle:(NSString *)title rowIndex:(NSInteger)index{
+    
     if (self = [super init]) {
         self.title = title;
         self.rowIndex = index;
     }
+    
     return self;
 }
 

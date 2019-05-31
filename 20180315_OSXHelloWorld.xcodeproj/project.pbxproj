@@ -392,7 +392,7 @@
 				CODE_SIGN_ENTITLEMENTS = 20180315_OSXHelloWorld/_0180315_OSXHelloWorld.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = V773G65KWZ;
+				DEVELOPMENT_TEAM = 5TU58AVC9D;
 				INFOPLIST_FILE = 20180315_OSXHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.longse.www.-0180315-OSXHelloWorld";
@@ -407,7 +407,7 @@
 				CODE_SIGN_ENTITLEMENTS = 20180315_OSXHelloWorld/_0180315_OSXHelloWorld.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = V773G65KWZ;
+				DEVELOPMENT_TEAM = 5TU58AVC9D;
 				INFOPLIST_FILE = 20180315_OSXHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.longse.www.-0180315-OSXHelloWorld";

@@ -12,6 +12,7 @@
 
 @interface SecondWindowController ()
 @property (nonatomic, strong) ThirdWindowController *nextVC;
+
 @end
 
 @implementation SecondWindowController
@@ -24,8 +25,8 @@
     [self initUI];
 }
 
-
 - (void)initUI{
+    
     NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(0, 0, 100, 100)];
     button.title = @"上一页";
     button.wantsLayer = YES ;
@@ -43,32 +44,29 @@
     [self.window.contentView addSubview:button2];
 }
 
-
 - (void)buttonClick:(NSButton *)sender{
     NSLog(@"返回");
   
-    //通过代理设置主窗口
+    // 通过代理设置主窗口
     AppDelegate *delegate = [[NSApplication sharedApplication] delegate];
     [self.window close];
     [delegate.mainWindowController.window center];
     [delegate.mainWindowController.window makeKeyAndOrderFront:nil];
 }
 
-
 - (void)buttonClick2:(NSButton *)sender{
     NSLog(@"下一页");
     
-    //不把下一页设置成属性，那么下一页就不能返回到这一页。
-    //ThirdWindowController *nextVC  = [[ThirdWindowController alloc] initWithWindowNibName:@"ThirdWindowController"];
+    // 不把下一页设置成属性，那么下一页就不能返回到这一页。
+    // ThirdWindowController *nextVC  = [[ThirdWindowController alloc] initWithWindowNibName:@"ThirdWindowController"];
     
     _nextVC  = [[ThirdWindowController alloc] initWithWindowNibName:@"ThirdWindowController"];
     
-    //显示下一个接口
+    // 显示下一个接口
     [_nextVC.window orderFront:nil];
     
-    //关闭当前窗口
+    // 关闭当前窗口
     [self.window orderOut:nil];
 }
-
 
 @end

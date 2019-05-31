@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface TestModel : NSObject
-@property (nonatomic, strong) NSString *title;
+
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, assign) NSInteger rowIndex;
 
 - (instancetype)initWithTitle:(NSString *)title rowIndex:(NSInteger)index;

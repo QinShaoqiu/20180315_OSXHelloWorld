@@ -23,7 +23,6 @@
     [self initUI];
 }
 
-
 - (void)initUI{
     NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(0, 0, 100, 100)];
     button.title = @"上一页";
@@ -33,7 +32,6 @@
     button.action = @selector(buttonClick:);
     [self.window.contentView addSubview:button];
 }
-
 
 - (void)buttonClick:(NSButton *)sender{
     NSLog(@"返回");
